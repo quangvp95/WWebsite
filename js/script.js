@@ -30,7 +30,7 @@ function pauseAudio() {
 };
 
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 14, 2022 00:00:00").getTime();
+var countDownDate = new Date("Sept 11, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -92,7 +92,7 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 14th Aug, 2022', styles);
+console.log('\n\n%c SAVE THE DATE: 11th Sep, 2022', styles);
 
 console.log('%cYour presence is requested!%c\n\nRegards: Sarthak Jain', styles1, styles2);
 
