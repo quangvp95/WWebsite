@@ -535,12 +535,14 @@ body {
 }
 
 .date {
+	font-size: 22px;
 	color: #874562;
 	font-weight: 900;
 }
 
 .place {
-	color: #874562;
+	font-size: 12px;
+	color: #3f3e3f;
 	font-weight: 900;
 }
 
