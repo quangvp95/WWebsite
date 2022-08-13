@@ -823,3 +823,134 @@ blockquote::after {
     transform: rotate(13deg) scale(1.25);
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --font-1: &quot;
+  MonteCarlo&quot;, cursive;--font-2: &quot;
+  Montagu Slab&quot;, serif;--color-1: #eedebc;
+  --color-2: #3d4378;
+  --color-3: #a7a9ba;
+  --color-4: #f7f7f7;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+:after,
+:before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper-donate {
+  position: fixed;
+  right: 100px;
+  bottom: 200px;
+  z-index: 99;
+}
+
+.wrapper-icon {
+  position: relative;
+}
+
+.union {
+  position: absolute;
+  top: 8px;
+  left: -2px;
+}
+
+.group {
+  position: absolute;
+  top: 0;
+  transition-property: top;
+  transition: all 0.3s linear;
+}
+
+.wrapper-icon:hover .group {
+  transition-delay: 1s;
+  transition-property: top;
+  top: -10px;
+}
+
+.heart {
+  position: absolute;
+  right: 50%;
+  top: 38%;
+  transform: translateX(50%);
+  fill: #fef1f2;
+}
+
+.wrapper-icon:hover .heart1 {
+  fill: #f96a84;
+  animation: animate 1s linear;
+  transition: all 0.3s linear;
+}
+
+
+.wrapper-schedule {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 2rem 4rem;
+  position: relative;
+}
+
+.cd-container::before {
+  content: " ";
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 28px;
+  background: #3b4654;
+}
+
+@media screen and (min-width: 680px) {
+  .cd-container::before {
+    left: 50%;
+    margin-left: -10px;
+  }
+}
+
+.cd-container::after {
+  content: " ";
+  width: 20px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  background: #3b4654;
+}
+
+@media screen and (min-width: 680px) {
+  .cd-container::after {
+    left: 50%;
+    margin-left: -10px;
+  }
+}

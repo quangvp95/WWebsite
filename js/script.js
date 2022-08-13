@@ -101,7 +101,7 @@ var styles2 = [
 console.log("\n\n%c SAVE THE DATE: 11th Sep, 2022", styles);
 
 console.log(
-  "%cYour presence is requested!%c\n\nRegards: Sarthak Jain",
+  "%cYour presence is requested!%c\n\nRegards: Huy Quang",
   styles1,
   styles2
 );
