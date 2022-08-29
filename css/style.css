@@ -354,7 +354,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -872,7 +872,7 @@ html {
 .wrapper-donate {
   position: fixed;
   right: 100px;
-  bottom: 200px;
+  bottom: 150px;
   z-index: 99;
 }
 
@@ -954,3 +954,193 @@ html {
     margin-left: -10px;
   }
 }
+
+/* Popup */
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4)
+}
+
+.w3-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px
+}
+
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+  from {
+      top: -300px;
+      opacity: 0
+  }
+
+  to {
+      top: 0;
+      opacity: 1
+  }
+}
+
+.w3-card-4,.w3-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before, .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.w3-container,.w3-panel {
+  padding: 0.01em 16px
+}
+
+.w3-display-container:hover .w3-display-hover {
+  display: block
+}
+
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block
+}
+
+.w3-tooltip,.w3-display-container {
+  position: relative
+}
+
+.w3-opacity,.w3-hover-opacity:hover {
+  opacity: 0.60
+}
+
+.w3-opacity-off,.w3-hover-opacity-off:hover {
+  opacity: 1
+}
+
+.w3-red,.w3-hover-red:hover {
+  color: #fff!important;
+  background-color: #f44336!important
+}
+
+.w3-display-topright {
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+.w3-xlarge {
+  font-size: 24px!important
+}
+
+.w3-btn,.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.w3-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-btn,.w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child {
+  background-color: #ccc;
+  color: #000
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px
+}
+
+.w3-bar .w3-button {
+  white-space: normal
+}
+
+@media (max-width: 600px) {
+  .w3-modal-content {
+      margin:0 10px;
+      width: auto!important
+  }
+
+  .w3-modal {
+      padding-top: 30px
+  }
+
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content {
+      position: relative
+  }
+
+  .w3-hide-small {
+      display: none!important
+  }
+
+  .w3-mobile {
+      display: block;
+      width: 100%!important
+  }
+
+  .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile {
+      text-align: center
+  }
+
+  .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button {
+      width: 100%
+  }
+}
+
+.w3-button:hover {
+  color: #000!important;
+  background-color: #ccc!important
+}
+
+body.darkpagetheme .w3-btn:hover.w3-white,body.darkpagetheme .w3-btn:active.w3-white,body.darkpagetheme .w3-button:hover.w3-white,body.darkpagetheme .w3-button:active.w3-white {
+  background-color: #38444d!important;
+}
+
+.w3-btn:hover.w3-blue,.w3-btn:active.w3-blue,.w3-button:hover.w3-blue,.w3-button:active.w3-blue {
+  background-color: #0d8bf2!important;
+  color: #fff!important;
+}
+
+.w3-btn:hover.w3-white,.w3-btn:active.w3-white,.w3-button:hover.w3-white,.w3-button:active.w3-white {
+  background-color: #f1f1f1!important;
+}
+
+
+
