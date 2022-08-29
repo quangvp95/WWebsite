@@ -2601,7 +2601,7 @@ html {
 .hero-wrap {
   position: relative;
   background-size: cover;
-  background-position: center 0;
+  background-position: center center;
   min-height: 100vh;
   margin-top: 0;
 
