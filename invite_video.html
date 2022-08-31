@@ -1,13 +1,20 @@
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width">
-</head>
-
-<body><video autoplay muted name="media" style="width: 100%;height: 100%;">
-        <source src="./assets/vid.mp4" type="video/mp4">
+  </head>
+  <body>
+    <video id="video-element-id" autoplay muted playsinline name="media" style="width: 100%;height: 100%;">
+      <source src="./assets/vid.mp4" type="video/mp4">
     </video>
-
-</body>
-
+    <script type="text/javascript">
+      var ua = navigator.userAgent.toLowerCase();
+      var is_safari = (ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0);
+      if (is_safari) {
+        var video = document.getElementById('video-element-id');
+        setTimeout(function() {
+          video.play();
+        }, 50);
+      }
+    </script>
+  </body>
 </html>
